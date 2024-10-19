@@ -7,8 +7,7 @@ function App() {
 
   return (
     <>
-      <h1>Symphony Rails</h1>
-      <Button />
+      
     </>
   )
 }
