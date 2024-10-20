@@ -1,18 +1,19 @@
-import { useState } from "react";
+import brand from "../../../assets/Symphony.png";
 
+
+/* Set class to hidden for standard navbar then build a seperate mobile navbar for smailler devices.
+-- focus on creating navbars and then adding functionality reflecting a single page application (SPA). */
 export default function Navbar() {
+
     return (
         <>
-            <div className="w-full">
+            <div  className={`bg-black bg-opacity-20 relative w-full fixed z-40  backdrop-blur-sm`}>
                 <div>
-                    
-                    <ul className="flex space-x-3">
-                    <span className="text-sm mr-auto">brand</span>
-                        <li className="text-sm">item-1</li>
-                        <li className="text-sm">item-2</li>
-                        <li className="text-sm">item-3</li>
-                        <li className="text-sm">item-4</li>
-                        <li className="text-sm">item-5</li>
+                    <ul className="flex space-x-3 items-center p-4">
+                        <img src={brand} alt="logo" className="text-sm mr-auto  w-auto h-[60px] lg:h-[50px]" />
+                        <li className="">Home</li>
+                        <li className="">Explore</li>
+                        <li className="">Contact</li>
                     </ul>
                 </div>
             </div>
