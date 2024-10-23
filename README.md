@@ -1,8 +1,23 @@
-# React + Vite
+# Symphony
+***ongoing development...***
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Notes:
+<ol>
+<li>Edit navbar to conditionally render mobile version and desktop version.
+<li>Routing and navigation functionality.
+<li>fetch data from api, decide wether or not to add basic backend logic
+</ol>
 
-Currently, two official plugins are available:
+## TechStack:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<ul>
+<li>React
+<li>Vite
+<li>TailwindCSS
+<li>JavaScript
+<li>Express?
+</ul>
+
+
+
+
