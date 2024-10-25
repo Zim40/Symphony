@@ -9,12 +9,12 @@ export default function Hero() {
 
     return (
         <>
-            <Navbar />
-            <div className="Symph
-ny">
+            
+            <div className="Symphony">
                 <img src={image_1} className="h-full w-full absolute top-0 left-0 object-cover z-0" />
-                <div className=" absolute top-0 left-0 h-full w-full bg-black bg-opacity-20"></div>
+                <div className=" absolute top-0 left-0 h-full w-full bg-black bg-opacity-20 overflow-hidden"></div>
             </div>
+            <Navbar />
         </>
     )
 }

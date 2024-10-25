@@ -1,0 +1,25 @@
+/* Base transition styles for entry and exit */
+.mobile-menu-enter {
+    opacity: 0;
+    right: 100%;
+;    overflow: hidden;
+  }
+  .mobile-menu-enter-active {
+    opacity: 1;
+    right: 0;
+    transition: opacity 600ms ease-in-out, right 500ms ease-in-out;
+    overflow: hidden;
+  }
+  .mobile-menu-exit {
+    opacity: 1;
+    right: 0;
+    overflow: hidden;
+  }
+  .mobile-menu-exit-active {
+    opacity: 0;
+    right: 100%;
+    transition: opacity 600ms ease-in-out, right 500ms ease-in-out;
+    overflow: hidden;
+  }
+  
+
