@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import "./navbar.css";
 import brand from "../../../assets/Symphony.png";
+import brand_2 from "../../../assets/Symphony-2.png";
 import { CSSTransition } from 'react-transition-group';
 import { IoIosSearch } from "react-icons/io";
 import { RiMenu3Line } from "react-icons/ri";
@@ -20,7 +21,7 @@ export default function Navbar() {
 
     return (
         <>
-            <div className="w-full fixed z-40 bg-SecondaryColor md:bg-transparent md:backdrop-blur-md min-h-16 flex md:items-center justify-between">
+            <div className="w-full sticky z-40 bg-SecondaryColor md:bg-transparent md:backdrop-blur-md min-h-16 flex md:items-center justify-between ">
                 <div className="hidden md:flex w-full pr-4 pl-4">
                     {/* Logo image */}
                     <div className="logo-png mr-6">
@@ -64,19 +65,24 @@ export default function Navbar() {
                 </div>
 
                 {/* Mobile navigation button + component */}
-                <div className="flex w-full items-center md:hidden">
-                    <img src={brand} className="flex justify-start items-center mx-4 w-[auto] h-[36px]" alt="Brand Logo - Symphony"/>
+                <div className="flex w-full sticky  items-center justify-center md:hidden  shadow shadow-PrimaryColor">
+                    <img src={brand_2} className="flex  items-center mx-4 w-[auto] h-[36px]" alt="Brand Logo - Symphony"/>
                     {isOpen ? (
-                        <MdOutlineClose onClick={toggleMenu} className="text-4xl font-semibold ml-auto mx-4 text-AccentColor" />
+                        <MdOutlineClose onClick={toggleMenu} className="text-4xl  ml-auto mx-4 text-AccentColor border-2 border-AccentColor shadow-black shadow-inner rounded-lg" />
                     ) : (
-                        <RiMenu3Line onClick={toggleMenu} className="text-4xl font-semibold ml-auto mx-4 text-AccentColor" />
+                        <RiMenu3Line onClick={toggleMenu} className="text-4xl  ml-auto mx-4 text-AccentColor border-2 shadow shadow-black rounded-lg" />
                     )}
                 </div>
             </div>
 
-            <CSSTransition noderef={nodeRef} in={isOpen} timeout={600} classNames="mobile-menu" unmountOnExit>
+            
+                
+                <CSSTransition noderef={nodeRef} in={isOpen} timeout={600} classNames="mobile-menu" unmountOnExit>
                 <MobileNav nodeRef={nodeRef} />
-            </CSSTransition>
+                </CSSTransition>
+               
+                
+            
         </>
     );
 };
@@ -85,12 +91,19 @@ const MobileNav = ({ isOpen, noderef }) => {
     return (
         <>
             {!isOpen ? (
-                <div  noderef={noderef} className={`mobile-menu md:hidden relative flex flex-end flex-col items-end w-full h-screen z-10 bg-SecondaryColor px-4 pt-4 `}>
-                    <nav className=" w-full flex flex-col list-none items-end justify-end space-y-6 mt-16 text-AccentColor">
-                        <li className="cursor-pointer">Home</li>
-                        <li className="cursor-pointer">Explore</li>
-                        <li className="cursor-pointer">Contact</li>
+                <div  noderef={noderef} className={`mobile-menu md:hidden absolute grid grid-cols-2 items-end w-full  z-10 bg-SecondaryColor px-4  border-t border-AccentColor`}>
+
+                    <div></div>
+                    
+                    <nav className=" w-full flex flex-col list-none items-end justify-end space-y-6 py-8 text-AccentColor">
+                        <li className="cursor-pointer border-b border-AccentColor p-2 w-full text-right  tracking-widest text-AccentColor">Home</li>
+                        <li className="cursor-pointer border-b border-AccentColor p-2 w-full text-right tracking-widest">Explore</li>
+                        <li className="cursor-pointer border-b border-AccentColor p-2 w-full text-right tracking-widest">Stories</li>
+                        <li className="cursor-pointer border-b border-AccentColor p-2 w-full text-right tracking-widest">Contact</li>
                     </nav>
+                    
+                     
+
                 </div>
             ) : (
                 ""

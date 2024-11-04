@@ -1,4 +1,5 @@
 import Hero from "../Components/Hero/index.jsx";
+import Footer from "../Components/Footer/index.jsx";
 import { Outlet } from "react-router-dom";
 
 export default function Root () {
@@ -8,6 +9,7 @@ export default function Root () {
 <div>
     <Outlet />
 </div>
+<Footer />
 </>
     )
 }
