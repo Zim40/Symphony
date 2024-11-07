@@ -33,7 +33,7 @@
   },
   "scripts": {
     "test": "run",
-    "dev": "concurrently \" cd client && npm run dev\""
+    "dev": "concurrently \"cd client && npm run dev\" \"cd server && npm start\""
   },
   "repository": {
     "type": "git",
