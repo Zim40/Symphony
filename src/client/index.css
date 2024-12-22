@@ -1,0 +1,71 @@
+:root {
+  font-family: "Oswald", sans-serif ;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  /* Colors */
+  --primary: #062726;
+  --secondary: #102B3F;
+  --primary-alt: #44A1A0;
+  --secondary-alt:#FFFFFA;
+  /* Font sizes */
+  --base: 17px;
+  --base-sm: 14px;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  letter-spacing: 1px;;
+  font-family: 'Oswald', sans-serif !important;
+  
+  
+}
+
+#error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0px 10px 15px 0px black;
+}
+
+.danger-icon {
+  width: 100%;
+  display: block;
+  font-size: 45px;
+  margin-bottom: 15px;
+  color: #ed2222;
+}
+
+.error-text {
+  font-weight: 600;
+}
+
+section {
+  min-width: 100%;
+  margin: 0;
+  padding: 30px 50px 30px 50px;
+}

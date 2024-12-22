@@ -1,0 +1,17 @@
+.btn-st {
+    all: unset;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: var(--base);
+    font-weight: 500;
+    color: var(--secondary-alt);
+    transition: color 0.2s ease-in-out, transform 0.2s ease;
+    background: rgba(47, 45, 45, 0.358);
+
+}
+
+.btn-st:hover {
+    /* color: var(--primary); */
+    transform: scale(0.96);
+
+}

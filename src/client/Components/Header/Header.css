@@ -1,0 +1,16 @@
+.hero-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/Parliament-hero-image.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 50%;
+}
+
+.hero-img {
+    
+}
+
+.hero-overlay {
+
+}
