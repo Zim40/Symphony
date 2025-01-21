@@ -15,8 +15,6 @@
     display: flex;
     margin: px;
     padding: 87.185px ;
-    /* min-width: 100%; */
-    /* min-height: 100%; */
     align-items: left;
     flex-direction: column;
     justify-content: center;
@@ -24,7 +22,7 @@
 
 #hero-h1 {
     font-family: "Oswald";
-    color: white;
+    color: var(--primary);
     font-size: 0.9em;
     letter-spacing: 1px;
     margin-bottom: 23px;
@@ -35,6 +33,7 @@
     color: var(--primary);
     font-family: "Oswald";
     font-size: 2rem;
+    letter-spacing: 3px;
     margin-bottom: 23px;
 }
 
@@ -42,8 +41,6 @@
 ul#hero-nav {
     list-style-type: none;
     display: inline;
-    /* align-items: center; */
-    
     color: var(--primary);
     padding-left: 0;
     font-family: "Oswald";
@@ -62,7 +59,7 @@ ul#hero-nav > li {
 @media (max-width: 768px) {
     .hero-text-container {
         padding: 50px 12px;
-        text-align: center;
+        /* text-align: center; */
     }
 
 }

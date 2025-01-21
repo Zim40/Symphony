@@ -1,5 +1,6 @@
 import { useRouteError } from "react-router-dom";
 import { CgDanger } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 export default function ErrorPage() {
     const error = useRouteError();
@@ -13,6 +14,7 @@ export default function ErrorPage() {
                 <p className="error-text">
                     <i>{error.statusText || error.message}</i>
                 </p>
+                <button><Link to={'/'}>Return Home</Link></button>
             </div>
         </div>
     );
